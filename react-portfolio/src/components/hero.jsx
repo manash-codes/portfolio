@@ -1,5 +1,5 @@
 import React from "react";
-import { HERO_CONTENT } from "../constants";
+import { CONTACT, HERO_CONTENT } from "../constants";
 import profilePic from "../assets/manashGuptaProfile.jpg";
 import { motion } from "framer-motion";
 
@@ -22,7 +22,7 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-5xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
+              className="lg:pb-16 pb-8 text-5xl font-thin tracking-tight lg:mt-16 lg:text-7xl"
             >
               Manash Gupta
             </motion.h1>
@@ -42,6 +42,15 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
+            <motion.a
+              variants={container(1.5)}
+              initial="hidden"
+              animate="visible"
+              className="text-xl font-semibold mr-2 rounded bg-neutral-900 px-2 py-1 max-xl:my-4 text-purple-800 hover:text-neutral-400"
+              href={`mailto:${CONTACT.email}`}
+            >
+              Contact Me
+            </motion.a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
