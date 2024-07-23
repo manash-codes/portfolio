@@ -64,6 +64,6 @@ export const PROJECTS = [
 
 export const CONTACT = {
     address: "Raigarh, Chhatishgarh, India",
-    phoneNo: "+91 9039784916",
+    phoneNo: "9039784916",
     email: "manash.9039@gmail.com",
 };

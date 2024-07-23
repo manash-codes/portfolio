@@ -27,9 +27,9 @@ const Contact = () => {
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
           className="my-4 block"
-          href={`callto:${CONTACT.phoneNo}`}
+          href={`tel:${CONTACT.phoneNo}`}
         >
-          {CONTACT.phoneNo}
+          +91 {CONTACT.phoneNo}
         </motion.a>
         <a href={`mailto:${CONTACT.email}`} className="border-b">
           {CONTACT.email}
