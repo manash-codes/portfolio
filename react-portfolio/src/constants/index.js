@@ -12,7 +12,7 @@ export const EXPERIENCES = [
         year: "2024 - Present",
         role: "Software Engineer",
         company: "Techment Technology",
-        description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
+        description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with tRPC APIs. Implemented responsive designs and optimized frontend performance.`,
         technologies: ["TypeScript", "React.js", "Next.js", "PostegreSQL", "AWS", "Webflow"],
     },
     {
@@ -26,7 +26,7 @@ export const EXPERIENCES = [
         year: "2022 Feb - Aug ",
         role: "Full Stack Developer",
         company: "Divyal technologies",
-        description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+        description: `Contributed to the development of web applications using Angular, Coldfusion, and BitBucket. Managed databases and implemented data storage solutions using MySQL. Worked closely with product managers to prioritize features and enhancements.`,
         technologies: ["Angular", "Coldfusion", "MySQL", "AWS", "BitBucket"],
     },
 ];
