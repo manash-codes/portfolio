@@ -1,5 +1,3 @@
-import { animate } from "framer-motion";
-import React from "react";
 import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 import { FaNodeJs } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";

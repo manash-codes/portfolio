@@ -1,5 +1,6 @@
-import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFileArrowDown } from "react-icons/fa6";
+import RESUME from "../assets/files/Manash_Gupta_Full_Stack.pdf";
 
 const Navbar = () => {
   return (
@@ -9,13 +10,23 @@ const Navbar = () => {
       </div>
       <div className="m-8 max-sm:me-0 flex justify-center items-center gap-4 text-2xl">
         <a
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-sky-700 hover:scale-110"
           href="https://www.linkedin.com/in/manash-gupta/"
         >
           <FaLinkedin />
         </a>
-        <a className="cursor-pointer" href="https://github.com/manash-codes">
+        <a
+          className="cursor-pointer hover:text-gray-500 hover:scale-110"
+          href="https://github.com/manash-codes"
+        >
           <FaGithub />
+        </a>
+        <a
+          className="cursor-pointer hover:text-purple-500 hover:scale-110"
+          href={RESUME}
+          download
+        >
+          <FaFileArrowDown />
         </a>
       </div>
     </nav>

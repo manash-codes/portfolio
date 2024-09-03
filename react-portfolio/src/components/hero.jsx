@@ -1,4 +1,3 @@
-import React from "react";
 import { CONTACT, HERO_CONTENT } from "../constants";
 import profilePic from "../assets/manashGuptaProfile.jpg";
 import { motion } from "framer-motion";
