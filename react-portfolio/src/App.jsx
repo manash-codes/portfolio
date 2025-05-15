@@ -1,10 +1,20 @@
-import About from "./components/about";
-import Contact from "./components/contact";
-import Experience from "./components/experience";
-import Hero from "./components/hero";
-import Navbar from "./components/navbar";
-import Projects from "./components/projects";
-import Technologies from "./components/technologies";
+import { lazy, Suspense } from "react";
+// import About from "./components/about";
+// import Contact from "./components/contact";
+// import Experience from "./components/experience";
+// import Hero from "./components/hero";
+// import Navbar from "./components/navbar";
+// import Projects from "./components/projects";
+// import Technologies from "./components/technologies";
+import Loader from "./components/loader";
+
+const LazyAbout = lazy(() => import("./components/about"));
+const LazyContact = lazy(() => import("./components/contact"));
+const LazyExperience = lazy(() => import("./components/experience"));
+const LazyHero = lazy(() => import("./components/hero"));
+const LazyNavbar = lazy(() => import("./components/navbar"));
+const LazyProjects = lazy(() => import("./components/projects"));
+const LazyTechnologies = lazy(() => import("./components/technologies"));
 
 export default function App() {
   return (
@@ -14,14 +24,17 @@ export default function App() {
       </div>
 
       <div className="container mx-auto px-8">
-        <Navbar />
-        <Hero />
-        <About />
-        <Technologies />
-        <Experience />
-        <Projects />
-        <Contact />
+        <Suspense fallback={<Loader />}>
+          <LazyNavbar />
+          <LazyHero />
+          <LazyAbout />
+          <LazyTechnologies />
+          <LazyExperience />
+          <LazyProjects />
+          <LazyContact />
+        </Suspense>
       </div>
     </div>
   );
 }
+
