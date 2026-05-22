@@ -1,12 +1,17 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const tailwindConfig = {
   content: [
-    "./index.html",
+    "./app/**/*.{js,jsx,ts,tsx}",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        glow: "0 20px 80px rgba(14, 165, 233, 0.18)",
+      },
+    },
   },
   plugins: [],
 }
 
+export default tailwindConfig;

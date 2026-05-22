@@ -3,31 +3,164 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2+ years of hands-on experience, I have honed my skills in front-end technologies like React, Angular and Next.js, as well as back-end technologies like Node.js, tRPC, MySQL, PostgreSQL, and MongoDB. I also posess a strong understanding of cloud computing technologies in AWS along with DevOps tools like Git, Docker, Jenkins and Vercel. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I build production-grade web platforms across UI, APIs, databases, and deployment workflows. My recent work spans Next.js App Router migrations, role-based dashboards, JWT authentication with RBAC, booking and payment systems, and AI-assisted product delivery that improves engineering velocity without compromising code quality.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 2+ years of professional experience, I have worked with a variety of technologies, including React, Next.js, Angular, Node.js, MySQL, tRPC, PostgreSQL, Git, Docker, Jenkins, Vercel and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies.`;
+export const ABOUT_TEXT = `I am a full stack developer and GenAI developer focused on building reliable, scalable, and user-friendly products. I work comfortably across React.js, Next.js, Node.js, Express.js, FastAPI, PostgreSQL, MySQL, MongoDB, Docker, Redis, Prisma, and cloud deployment workflows. I care about clean system design, API quality, performance optimization, and using AI tools thoughtfully to ship faster while keeping the product maintainable.`;
+
+export const SKILLS = [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "Node.js",
+    "Express.js",
+    "FastAPI",
+    "PostgreSQL",
+    "MySQL",
+    "MongoDB",
+    "Prisma",
+    "Redis",
+    "Docker",
+    "OpenAI",
+    "Cursor AI",
+];
+
+export const STATS = [
+    { value: "3x", label: "Engineering velocity boost with AI-assisted delivery" },
+    { value: "100k+", label: "Records handled in booking, scheduling, and payments" },
+    { value: "40%", label: "SEO improvement from Next.js App Router migration" },
+];
+
+export const SKILL_GROUPS = [
+    {
+        title: "Languages",
+        items: ["JavaScript (ES6+)", "TypeScript", "Python"],
+    },
+    {
+        title: "Frameworks",
+        items: ["React.js", "Next.js", "Node.js", "Express.js", "FastAPI"],
+    },
+    {
+        title: "Databases",
+        items: ["PostgreSQL", "MySQL", "MongoDB"],
+    },
+    {
+        title: "Tools & Infra",
+        items: ["Docker", "Redis", "Prisma", "Jenkins"],
+    },
+    {
+        title: "Core Engineering",
+        items: ["System Design", "API Design", "Performance Optimization"],
+    },
+    {
+        title: "AI & LLM",
+        items: ["OpenAI", "Cursor AI", "RAG", "Agent-based architectures"],
+    },
+];
 
 export const EXPERIENCES = [
     {
-        year: "2024 - Present",
+        year: "Jun 2025 - Present",
+        role: "Full Stack Developer I",
+        company: "GoPropify Pvt. Ltd.",
+        location: "Hybrid - Gurugram",
+        description: `Own end-to-end delivery for core platform features across frontend, backend, APIs, and database architecture.`,
+        highlights: [
+            "Delivered 2 production-ready products in 6 months using AI-assisted development, accelerating engineering velocity by 3x.",
+            "Refactored UI architecture with modern React patterns, improving development speed by 20% and performance by 30%.",
+            "Designed role-based dashboards and JWT authentication with RBAC, improving productivity by 25% while strengthening access security.",
+            "Built booking, scheduling, and payment systems handling 100k+ records, reducing manual effort by 50% and improving database performance by 40%.",
+            "Integrated payments and analytics for seamless transaction tracking and data-driven insights.",
+        ],
+        technologies: ["React.js", "Next.js", "Node.js", "Express", "JWT", "RBAC", "Payments", "Analytics"],
+    },
+    {
+        year: "Feb 2025 - May 2025",
+        role: "Sr. Associate Software Engineer",
+        company: "Techno Exponent",
+        location: "Remote - Kolkata",
+        description: `Led frontend development for enterprise systems with React and TypeScript.`,
+        highlights: [
+            "Integrated payments and analytics, improving transaction success rate by 20%.",
+            "Built complex dynamic forms with validation workflows.",
+            "Conducted code reviews and improved code quality across frontend delivery.",
+            "Migrated a system to Next.js App Router, improving SEO by 40% and reducing build time by 30%.",
+        ],
+        technologies: ["React", "TypeScript", "Next.js App Router", "Payments", "Analytics", "Forms"],
+    },
+    {
+        year: "Jan 2023 - Aug 2024",
         role: "Software Engineer",
         company: "Techment Technology",
-        description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with tRPC APIs. Implemented responsive designs and optimized frontend performance.`,
-        technologies: ["TypeScript", "React.js", "Next.js", "PostegreSQL", "AWS", "Webflow"],
+        location: "Remote - Bhilai",
+        description: `Delivered full product lifecycle work from design and implementation through deployment.`,
+        highlights: [
+            "Designed and developed user interfaces for web applications using Next.js and React.",
+            "Worked closely with backend developers to integrate frontend components with tRPC APIs.",
+            "Implemented responsive designs and optimized frontend performance.",
+            "Implemented authentication using Clerk with password login and OAuth providers including Google and Microsoft.",
+            "Built backend APIs and improved response time by 30%.",
+            "Deployed scalable systems on AWS and improved backend integrations.",
+            "Conducted training on the T3 stack and microservices architecture.",
+        ],
+        technologies: ["TypeScript", "React.js", "Next.js", "tRPC", "PostgreSQL", "Clerk", "AWS", "Webflow"],
     },
     {
         year: "2023 - 2024",
         role: "Jr. Software Engineer",
         company: "Techment Technology",
-        description: `Developed and maintained web and windows applications using WPF, .Net, and Entity Framework. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
+        location: "Remote - Bhilai",
+        description: `Developed and maintained web and Windows applications while supporting API and database delivery.`,
+        highlights: [
+            "Developed and maintained applications using WPF, .NET, and Entity Framework.",
+            "Designed and implemented RESTful APIs for data communication.",
+            "Collaborated with cross-functional teams to deliver high-quality software products on schedule.",
+        ],
         technologies: ["C#", "WPF", ".NET", "Entity Framework", "MySQL"],
     },
     {
-        year: "2022 Feb - Aug ",
+        year: "Feb 2022 - Aug 2022",
         role: "Full Stack Developer",
-        company: "Divyal technologies",
-        description: `Contributed to the development of web applications using Angular, Coldfusion, and BitBucket. Managed databases and implemented data storage solutions using MySQL. Worked closely with product managers to prioritize features and enhancements.`,
-        technologies: ["Angular", "Coldfusion", "MySQL", "AWS", "BitBucket"],
+        company: "Divyal Technologies",
+        location: "Remote",
+        description: `Contributed to web application development and database-backed product features.`,
+        highlights: [
+            "Built web application features using Angular, ColdFusion, and Bitbucket workflows.",
+            "Managed databases and implemented data storage solutions using MySQL.",
+            "Worked closely with product managers to prioritize features and enhancements.",
+        ],
+        technologies: ["Angular", "ColdFusion", "MySQL", "AWS", "Bitbucket"],
+    },
+];
+
+export const CERTIFICATIONS = [
+    {
+        title: "AI Engineering Core Track",
+        issuer: "Ed Donner",
+        description:
+            "Covered LLM Engineering, Retrieval-Augmented Generation (RAG), QLoRA, and agent-based architectures.",
+    },
+    {
+        title: "Namaste Node.js",
+        issuer: "Akshay Saini",
+        description:
+            "Strengthened backend fundamentals including event loop, async patterns, and system design principles.",
+    },
+];
+
+export const EDUCATION = [
+    {
+        degree: "Master of Computer Applications (MCA)",
+        school: "Bhilai Institute of Technology, Durg",
+        location: "Durg, India",
+        year: "2020 - 2022",
+    },
+    {
+        degree: "Bachelor of Computer Applications (BCA)",
+        school: "Raigarh City College",
+        location: "Raigarh, India",
+        year: "2016 - 2019",
     },
 ];
 
@@ -63,7 +196,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-    address: "Raigarh, Chhatishgarh, India",
+    address: "Gurgaon, India",
     phoneNo: "9039784916",
     email: "manash.9039@gmail.com",
 };
