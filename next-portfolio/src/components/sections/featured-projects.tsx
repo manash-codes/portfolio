@@ -1,0 +1,9 @@
+import Image from "next/image";
+import { FaArrowUpRightFromSquare, FaGithub } from "react-icons/fa6";
+import { projects } from "@/src/constants/portfolio";
+import { SectionHeading } from "@/src/components/ui/section-heading";
+import { Reveal } from "@/src/components/ui/reveal";
+
+export function FeaturedProjects() {
+  return <section id="work" className="section work-section"><SectionHeading eyebrow="03 / Selected work" title="Products are proof of the decisions behind them." copy="Each case study foregrounds the problem, the system, and the trade-offs—not a gallery of screenshots." /><div className="project-list">{projects.map((project, index) => <Reveal key={project.title}><article className="project-case"><div className="project-index">0{index + 1}</div><div className="project-image"><Image src={project.image} alt={`Screenshot from ${project.title}`} sizes="(max-width: 768px) 100vw, 42vw" placeholder="blur" /></div><div className="project-content"><p className="eyebrow">Case study</p><h3>{project.title}</h3><p className="project-problem"><strong>Problem — </strong>{project.problem}</p><p>{project.outcome}</p><div className="architecture" aria-label={`${project.title} architecture`}><span>{project.architecture.join(" → ")}</span></div><div className="project-meta"><div><h4>Key decisions</h4><ul>{project.decisions.map((decision) => <li key={decision}>{decision}</li>)}</ul></div><div><h4>Signals</h4>{project.metrics.map((metric) => <p key={metric.label}><span>{metric.label}</span>{metric.value}</p>)}</div></div><p className="tech-line">{project.stack.join(" · ")}</p><div className="project-links">{project.demo && <a href={project.demo} target="_blank" rel="noreferrer">Live demo <FaArrowUpRightFromSquare /></a>}{project.github && <a href={project.github} target="_blank" rel="noreferrer"><FaGithub /> GitHub</a>}</div></div></article></Reveal>)}</div></section>;
+}
