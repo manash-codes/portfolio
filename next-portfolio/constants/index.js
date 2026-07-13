@@ -11,22 +11,29 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
     {
-        year: "2024 - Present",
+        year: "June 2025 - May 2026",
+        role: "Full Stack Developer",
+        company: "Gopropify Pvt. Ltd.",
+        description: `Worked on developing and maintaining web applications using React.js, Node.js, and FastAPI. Implemented RAG (Retrieval-Augmented Generation) techniques to enhance the application's capabilities. Collaborated with cross-functional teams to design and implement new features, ensuring high performance and responsiveness. Utilized WebSockets for real-time communication and integrated Supabase and Redis for efficient data storage.`,
+        technologies: ["OpenAI", "Langchain", "RAG", "CursorAI", "Claude Code", "FastAPI", "Node.js", "React.js", "WebSockets", "Supabase", "Redis"],
+    },
+    {
+        year: "Feb 2025 - May 2025",
+        role: "Senior Associate Software Engineer",
+        company: "Techno Exponent",
+        description: `Worked on developing and maintaining web applications using React.js and TypeScript. Collaborated with cross-functional teams to design and implement new features, ensuring high performance and responsiveness. Utilized WebSockets for real-time communication and integrated MongoDB for efficient data storage.`,
+        technologies: ["TypeScript", "React.js", "WebSockets", "Node.js", "MongoDb", "AWS"],
+    },
+    {
+        year: "Jan 2023 - Aug 2024",
         role: "Software Engineer",
         company: "Techment Technology",
         description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with tRPC APIs. Implemented responsive designs and optimized frontend performance.`,
-        technologies: ["TypeScript", "React.js", "Next.js", "PostegreSQL", "AWS", "Webflow"],
+        technologies: ["TypeScript", "tRPC", "React.js", "Next.js", "Angular", "Node.js", "MongoDb", "PostgreSQL", "AWS", "Webflow"],
     },
     {
-        year: "2023 - 2024",
-        role: "Jr. Software Engineer",
-        company: "Techment Technology",
-        description: `Developed and maintained web and windows applications using WPF, .Net, and Entity Framework. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-        technologies: ["C#", "WPF", ".NET", "Entity Framework", "MySQL"],
-    },
-    {
-        year: "2022 Feb - Aug ",
-        role: "Full Stack Developer",
+        year: "Feb 2022 - Aug 2022",
+        role: "Software Developer",
         company: "Divyal technologies",
         description: `Contributed to the development of web applications using Angular, Coldfusion, and BitBucket. Managed databases and implemented data storage solutions using MySQL. Worked closely with product managers to prioritize features and enhancements.`,
         technologies: ["Angular", "Coldfusion", "MySQL", "AWS", "BitBucket"],
