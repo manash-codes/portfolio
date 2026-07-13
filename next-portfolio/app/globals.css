@@ -3,6 +3,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --global-text-scale: 90%; 
+}
+
+
+html {
+  /* 100% usually equals 16px in most browsers */
+  font-size: var(--global-text-scale); 
 }
 
 @theme inline {
