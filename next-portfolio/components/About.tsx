@@ -1,6 +1,7 @@
+import CustomImage from "@/components/ui/Image";
 import aboutImg from "../assets/about.jpg";
 import { ABOUT_TEXT } from "../constants";
-import { motion } from "framer-motion";
+import * as motion from "framer-motion/client";
 
 const About = () => {
   return (
@@ -16,7 +17,13 @@ const About = () => {
           className="w-full lg:w-1/2 lg:p-8"
         >
           <div className="flex justify-center items-center">
-            <img className="rounded-2xl" src={aboutImg} alt="about me" />
+            <CustomImage
+              className="rounded-2xl"
+              src={aboutImg.src}
+              width={aboutImg.width}
+              height={aboutImg.height}
+              alt="about me"
+            />
           </div>
         </motion.div>
         <motion.div

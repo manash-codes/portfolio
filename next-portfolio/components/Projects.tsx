@@ -1,5 +1,6 @@
+import CustomImage from "@/components/ui/Image";
 import { PROJECTS } from "../constants";
-import { motion } from "framer-motion";
+import * as motion from "framer-motion/client";
 
 const Projects = () => {
   return (
@@ -21,7 +22,7 @@ const Projects = () => {
               transition={{ duration: 1 }}
               className="w-full lg:w-1/4"
             >
-              <img
+              <CustomImage
                 className="mb-6 rounded"
                 height={150}
                 width={150}

@@ -1,11 +1,12 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaFileArrowDown } from "react-icons/fa6";
-import RESUME from "../assets/files/Manash_Gupta_Full_Stack.pdf";
+// import RESUME from "@/public/";
+
 
 const Navbar = () => {
   return (
-    <nav className="mb-2 flex justify-between items-center py-6">
-      <div className="flex flex-shrink-0 items-center">
+    <nav className="mb-2 flex justify-between items-center py-2">
+      <div className="flex shrink-0 items-center">
         <h2 className="opacity-80 text-3xl font-bold mx-2 w-10">Mg</h2>
       </div>
       <div className="m-8 max-sm:me-0 flex justify-center items-center gap-4 text-2xl">
@@ -23,7 +24,7 @@ const Navbar = () => {
         </a>
         <a
           className="cursor-pointer hover:text-purple-500 hover:scale-110"
-          href={RESUME}
+          href={"/Manash_Gupta_Full_Stack.pdf"}
           download
         >
           <FaFileArrowDown />

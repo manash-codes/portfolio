@@ -3,17 +3,18 @@ import { FaNodeJs } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 import { SiAngular, SiMongodb } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
-import { motion } from "framer-motion";
+import * as motion from "framer-motion/client";
+import { Variants } from "framer-motion";
 
-const iconVariants = (duration) => ({
+const iconVariants = (duration: number): Variants => ({
   initial: { y: -10 },
   animate: {
     y: [10, -10],
     transition: {
-      duration: duration,
-      ease: "linear",
+      duration,
+      ease: "linear" as const,
       repeat: Infinity,
-      repeatType: "reverse",
+      repeatType: "reverse" as const,
     },
   },
 });
