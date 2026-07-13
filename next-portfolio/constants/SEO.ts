@@ -49,6 +49,6 @@ export const SEO = {
         apple: "/apple-touch-icon.png",
     },
     manifest: "/site.webmanifest",
-    viewport: "width=device-width, initial-scale=1, maximum-scale=5",
     robots: "index, follow",
+    metadataBase: new URL("https://portfolio-manash.vercel.app/"),
 };
