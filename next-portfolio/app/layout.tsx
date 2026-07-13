@@ -15,6 +15,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = SEO;
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export default function RootLayout({
   children,
