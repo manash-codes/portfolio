@@ -4,55 +4,52 @@ import * as motion from "framer-motion/client";
 
 const Projects = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <section className="border-b border-slate-800 pb-20">
       <motion.h2
+        initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
-        transition={{ duration: 0.5 }}
-        className="my-20 text-center text-4xl"
+        transition={{ duration: 0.6 }}
+        className="mb-12 text-center text-4xl font-semibold tracking-tight text-slate-100"
       >
         Projects
       </motion.h2>
-      <div>
+
+      <div className="space-y-10">
         {PROJECTS.map((project, index) => (
-          <div className="mb-8 flex flex-wrap lg:justify-center" key={index}>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 1 }}
-              className="w-full lg:w-1/4"
-            >
+          <motion.article
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: index * 0.08 }}
+            className="grid gap-6 rounded-[28px] border border-slate-800 bg-slate-950/70 p-6 shadow-[0_24px_80px_rgba(15,23,42,0.14)] lg:grid-cols-[200px_minmax(0,1fr)]"
+          >
+            <div className="flex items-start justify-center">
               <CustomImage
-                className="mb-6 rounded"
-                height={150}
-                width={150}
+                className="rounded-3xl"
+                height={180}
+                width={180}
                 src={project.image}
                 alt={project.title}
               />
-            </motion.div>
-            <motion.div
-              whileInView={{ opacity: 1, x: 0 }}
-              initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1 }}
-              className="w-full max-w-xl lg:w-3/4"
-            >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
-              <p className="mb-4 text-neutral-400">{project.description}</p>
-              <div className="flex flex-wrap">
-                {project.technologies.map((tech, index) => (
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-slate-100">{project.title}</h3>
+              <p className="mt-4 text-slate-400">{project.description}</p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {project.technologies.map((tech, techIndex) => (
                   <span
-                    key={index}
-                    className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
+                    key={techIndex}
+                    className="rounded-full border border-cyan-500/20 bg-slate-950/80 px-3 py-1 text-sm font-medium text-cyan-200"
                   >
                     {tech}
                   </span>
                 ))}
               </div>
-            </motion.div>
-          </div>
+            </div>
+          </motion.article>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
