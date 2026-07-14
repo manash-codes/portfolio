@@ -1,5 +1,5 @@
 import { CONTACT, HERO_CONTENT, HERO_CONTENT2 } from "../constants";
-import profilePic from "../assets/manashGuptaProfile.jpg";
+import profilePic from "../assets/manashGuptaProfile.webp";
 import * as motion from "framer-motion/client";
 import CustomImage from "@/components/ui/Image";
 
