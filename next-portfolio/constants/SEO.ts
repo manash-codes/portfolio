@@ -1,7 +1,9 @@
+import { YEARS_OF_EXPERIENCE } from "@/constants";
+
 export const SEO = {
     title: "Manash Gupta | Software Engineer",
     description:
-        "Manash Gupta, a passionate full stack developer with 3+ years of experience in React, Angular, Next.js, Node.js, tRPC, MySQL, PostgreSQL, MongoDB, AWS, and DevOps.",
+        `Manash Gupta, a passionate full stack developer with ${YEARS_OF_EXPERIENCE} years of experience in React, Angular, Next.js, Node.js, tRPC, MySQL, PostgreSQL, MongoDB, AWS, and DevOps.`,
     keywords: [
         "Full Stack Developer",
         "React",
@@ -23,7 +25,7 @@ export const SEO = {
         url: "https://manashgupta.dev",
         title: "Manash Gupta | Software Engineer",
         description:
-            "Manash Gupta, a passionate full stack developer with 2+ years of experience in React, Angular, Next.js, Node.js, tRPC, MySQL, PostgreSQL, MongoDB, AWS, and DevOps.",
+            "Manash Gupta, a passionate full stack developer with 4+ years of experience in React, Angular, Next.js, Node.js, tRPC, MySQL, PostgreSQL, MongoDB, AWS, and DevOps.",
         images: [
             {
                 url: "/og_image.png",
@@ -37,7 +39,7 @@ export const SEO = {
         card: "summary_large_image",
         title: "Manash Gupta | Software Engineer",
         description:
-            "Manash Gupta, a passionate full stack developer with 3+ years of experience in React, Angular, Next.js, Node.js, tRPC, MySQL, PostgreSQL, MongoDB, AWS, and DevOps.",
+            "Manash Gupta, a passionate full stack developer with 4+ years of experience in React, Angular, Next.js, Node.js, tRPC, MySQL, PostgreSQL, MongoDB, AWS, and DevOps.",
         images: ["/og_image.png"],
         creator: "@manash_codes",
     },

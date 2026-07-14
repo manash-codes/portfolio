@@ -3,11 +3,13 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 2+ years of hands-on experience, I have honed my skills in front-end technologies like React, Angular and Next.js, as well as back-end technologies like Node.js, tRPC, MySQL, PostgreSQL, and MongoDB.`
+export const YEARS_OF_EXPERIENCE = "3+";
 
-export const HERO_CONTENT2 = `I also posess a strong understanding of cloud computing technologies in AWS along with DevOps tools like Git, Docker, Jenkins and Vercel. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I build polished, scalable web applications that solve real problems and create memorable experiences. With ${YEARS_OF_EXPERIENCE} years of experience, I specialize in React, Angular, and Next.js on the frontend, plus Node.js, tRPC, MySQL, PostgreSQL, and MongoDB on the backend.`
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 2+ years of professional experience, I have worked with a variety of technologies, including React, Next.js, Angular, Node.js, MySQL, tRPC, PostgreSQL, Git, Docker, Jenkins, Vercel and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies.`;
+export const HERO_CONTENT2 = `I also have strong cloud and DevOps experience with AWS, Git, Docker, Jenkins, and Vercel. I enjoy turning ideas into reliable production-ready solutions that drive business impact and delight users.`;
+
+export const ABOUT_TEXT = `I am a dedicated full stack developer focused on building modern, performant web applications. With ${YEARS_OF_EXPERIENCE} years of experience, I’ve delivered products using React, Next.js, Angular, Node.js, MySQL, tRPC, PostgreSQL, MongoDB, Git, Docker, Jenkins, and Vercel. I thrive in collaborative teams, solve complex problems with care, and continuously learn new technologies. Outside of work, I stay active and keep up with the latest web development trends.`;
 
 export const EXPERIENCES = [
     {
