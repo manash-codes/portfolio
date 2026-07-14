@@ -26,7 +26,7 @@ const About = () => {
         >
           <div className="overflow-hidden rounded-[28px] border border-slate-800 bg-slate-950/60 p-4 shadow-[0_24px_80px_rgba(15,23,42,0.2)]">
             <CustomImage
-              className="block rounded-[24px]"
+              className="block rounded-3xl"
               src={aboutImg.src}
               width={aboutImg.width}
               height={aboutImg.height}

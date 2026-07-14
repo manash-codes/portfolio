@@ -10,7 +10,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-4 text-2xl text-slate-300">
         <a
-          className="inline-flex items-center justify-center rounded-full p-2 transition hover:text-cyan-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+          className="inline-flex items-center justify-center rounded-full p-2 transition hover:text-cyan-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
           href="https://www.linkedin.com/in/manash-gupta/"
           target="_blank"
           rel="noreferrer noopener"
@@ -19,7 +19,7 @@ const Navbar = () => {
           <FaLinkedin />
         </a>
         <a
-          className="inline-flex items-center justify-center rounded-full p-2 transition hover:text-cyan-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+          className="inline-flex items-center justify-center rounded-full p-2 transition hover:text-cyan-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
           href="https://github.com/manash-codes"
           target="_blank"
           rel="noreferrer noopener"
@@ -28,7 +28,7 @@ const Navbar = () => {
           <FaGithub />
         </a>
         <a
-          className="inline-flex items-center justify-center rounded-full p-2 transition hover:text-cyan-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+          className="inline-flex items-center justify-center rounded-full p-2 transition hover:text-cyan-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
           href="/Manash_Gupta_Full_Stack.pdf"
           download
           aria-label="Download resume"
