@@ -57,11 +57,18 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="fixed inset-0 -z-10 bg-slate-950">
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-6 focus:top-6 focus:z-50 focus:rounded-full focus:bg-cyan-300 focus:px-5 focus:py-3 focus:text-sm focus:font-semibold focus:text-slate-950 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-white"
+      >
+        Skip to main content
+      </a>
+
+      <div className="fixed inset-0 -z-10 bg-slate-950" aria-hidden="true">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(56,189,248,0.16),transparent_22%),radial-gradient(circle_at_30%_20%,rgba(168,85,247,0.14),transparent_16%)]" />
       </div>
 
-      <main className="mx-auto min-h-screen max-w-7xl px-6 py-8 sm:px-8 lg:px-10">
+      <main id="main-content" className="mx-auto min-h-screen max-w-7xl px-6 py-8 sm:px-8 lg:px-10">
         <Navbar />
         <div className="space-y-24">
           <Hero />

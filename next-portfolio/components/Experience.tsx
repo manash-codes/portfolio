@@ -3,8 +3,9 @@ import * as motion from "framer-motion/client";
 
 const Experience = () => {
   return (
-    <section id="experience" className="border-b border-slate-800 pb-24">
+    <section id="experience" aria-labelledby="experience-heading" className="border-b border-slate-800 pb-24">
       <motion.h2
+        id="experience-heading"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -17,6 +18,7 @@ const Experience = () => {
         {EXPERIENCES.map((experience, index) => (
           <motion.article
             key={index}
+            aria-labelledby={`experience-${index}-title`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: index * 0.06 }}
@@ -28,7 +30,9 @@ const Experience = () => {
 
             <div>
               <h3 className="text-xl font-semibold text-slate-100">
+                <span id={`experience-${index}-title`}>
                 {experience.role}
+                </span>
               </h3>
               <p className="mt-1 text-sm font-medium text-cyan-300">{experience.company}</p>
               <p className="mt-4 text-slate-400">{experience.description}</p>

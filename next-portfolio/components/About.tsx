@@ -7,8 +7,9 @@ import * as motion from "framer-motion/client";
 
 const About = () => {
   return (
-    <section id="about" className="border-b border-slate-800 pb-20">
+    <section id="about" aria-labelledby="about-heading" className="border-b border-slate-800 pb-20">
       <motion.h2
+        id="about-heading"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}

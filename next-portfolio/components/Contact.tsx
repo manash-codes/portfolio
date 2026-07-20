@@ -5,8 +5,9 @@ import * as motion from "framer-motion/client";
 
 const Contact = () => {
   return (
-    <section id="contact" className="border-b border-slate-800 pb-20">
+    <section id="contact" aria-labelledby="contact-heading" className="border-b border-slate-800 pb-20">
       <motion.h2
+        id="contact-heading"
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -40 }}
         transition={{ duration: 0.6 }}
@@ -33,12 +34,14 @@ const Contact = () => {
         >
           <a
             href={`tel:${CONTACT.phoneNo}`}
+            aria-label={`Call Manash Gupta at +91 ${CONTACT.phoneNo}`}
             className="block rounded-full border border-cyan-500/30 bg-slate-950/50 px-6 py-3 text-base font-semibold text-cyan-200 transition hover:border-cyan-400 hover:bg-slate-900"
           >
             +91 {CONTACT.phoneNo}
           </a>
           <a
             href={`mailto:${CONTACT.email}`}
+            aria-label={`Email Manash Gupta at ${CONTACT.email}`}
             className="inline-flex rounded-full border border-cyan-500/30 bg-slate-950/50 px-6 py-3 text-base font-semibold text-cyan-200 transition hover:border-cyan-400 hover:bg-slate-900"
           >
             {CONTACT.email}

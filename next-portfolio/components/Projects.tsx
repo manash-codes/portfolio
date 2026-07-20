@@ -4,8 +4,9 @@ import * as motion from "framer-motion/client";
 
 const Projects = () => {
   return (
-    <section id="projects" className="border-b border-slate-800 pb-20">
+    <section id="projects" aria-labelledby="projects-heading" className="border-b border-slate-800 pb-20">
       <motion.h2
+        id="projects-heading"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -18,6 +19,7 @@ const Projects = () => {
         {PROJECTS.map((project, index) => (
           <motion.article
             key={index}
+            aria-labelledby={`project-${index}-title`}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: index * 0.08 }}
@@ -33,7 +35,7 @@ const Projects = () => {
               />
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-slate-100">{project.title}</h3>
+              <h3 id={`project-${index}-title`} className="text-xl font-semibold text-slate-100">{project.title}</h3>
               <p className="mt-4 text-slate-400">{project.description}</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {project.technologies.map((tech, techIndex) => (

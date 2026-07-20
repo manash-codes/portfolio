@@ -31,8 +31,9 @@ const technologies = [
 
 const Technologies = () => {
   return (
-    <section id="technologies" className="border-b border-slate-800 pb-24">
+    <section id="technologies" aria-labelledby="technologies-heading" className="border-b border-slate-800 pb-24">
       <motion.h2
+        id="technologies-heading"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -46,6 +47,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        role="list"
       >
         {technologies.map((technology, index) => (
           <motion.div
@@ -54,8 +56,8 @@ const Technologies = () => {
             animate="animate"
             initial="initial"
             className="group rounded-3xl border border-slate-800 bg-slate-950/70 p-6 text-center shadow-[0_24px_80px_rgba(15,23,42,0.12)]"
-            role="article"
-            aria-label={technology.label}
+            role="listitem"
+            aria-label={`${technology.label} skill`}
           >
             <div className="flex h-20 items-center justify-center rounded-3xl bg-slate-900/80 transition group-hover:bg-cyan-950/90">
               {technology.icon}

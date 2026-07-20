@@ -14,10 +14,11 @@ const container = (delay: number) => ({
 
 const Hero = () => {
   return (
-    <section id="home" className="border-b border-slate-800 pb-16 pt-10 lg:pt-16">
+    <section id="home" aria-labelledby="home-heading" className="border-b border-slate-800 pb-16 pt-10 lg:pt-16">
       <div className="flex flex-col gap-16 lg:flex-row lg:items-center lg:gap-24">
         <div className="lg:max-w-2xl">
           <motion.h1
+            id="home-heading"
             variants={container(0)}
             initial="hidden"
             animate="visible"
@@ -58,6 +59,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
             href={`mailto:${CONTACT.email}`}
+            aria-label={`Email Manash Gupta at ${CONTACT.email}`}
             className="mt-8 inline-flex items-center justify-center rounded-full bg-cyan-400 px-7 py-3 text-sm font-semibold uppercase tracking-[0.24em] text-slate-950 transition hover:bg-cyan-300 focus-visible:outline focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
           >
             Contact Me
