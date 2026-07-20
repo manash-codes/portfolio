@@ -14,7 +14,7 @@ const container = (delay: number) => ({
 
 const Hero = () => {
   return (
-    <section className="border-b border-slate-800 pb-16 pt-10 lg:pt-16">
+    <section id="home" className="border-b border-slate-800 pb-16 pt-10 lg:pt-16">
       <div className="flex flex-col gap-16 lg:flex-row lg:items-center lg:gap-24">
         <div className="lg:max-w-2xl">
           <motion.h1

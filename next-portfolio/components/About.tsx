@@ -7,7 +7,7 @@ import * as motion from "framer-motion/client";
 
 const About = () => {
   return (
-    <section className="border-b border-slate-800 pb-20">
+    <section id="about" className="border-b border-slate-800 pb-20">
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -31,7 +31,7 @@ const technologies = [
 
 const Technologies = () => {
   return (
-    <section className="border-b border-slate-800 pb-24">
+    <section id="technologies" className="border-b border-slate-800 pb-24">
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}

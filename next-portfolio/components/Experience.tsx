@@ -3,7 +3,7 @@ import * as motion from "framer-motion/client";
 
 const Experience = () => {
   return (
-    <section className="border-b border-slate-800 pb-24">
+    <section id="experience" className="border-b border-slate-800 pb-24">
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}

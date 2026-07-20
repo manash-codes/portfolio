@@ -5,7 +5,7 @@ import * as motion from "framer-motion/client";
 
 const Contact = () => {
   return (
-    <section className="border-b border-slate-800 pb-20">
+    <section id="contact" className="border-b border-slate-800 pb-20">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -40 }}

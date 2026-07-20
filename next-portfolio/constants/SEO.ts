@@ -1,11 +1,23 @@
+import type { Metadata } from "next";
 import { YEARS_OF_EXPERIENCE } from "@/constants";
 
-export const SEO = {
-    title: "Manash Gupta | Software Engineer",
-    description:
-        `Manash Gupta, a passionate full stack developer with ${YEARS_OF_EXPERIENCE} years of experience in React, Angular, Next.js, Node.js, tRPC, MySQL, PostgreSQL, MongoDB, AWS, and DevOps.`,
+export const SITE_URL = "https://portfolio-manash.vercel.app";
+
+const title = "Manash Gupta | Full Stack Developer";
+const description = `Manash Gupta is a full stack developer with ${YEARS_OF_EXPERIENCE} years of experience building React, Angular, Next.js, Node.js, tRPC, MySQL, PostgreSQL, MongoDB, AWS, Docker, Jenkins, and Vercel applications.`;
+
+export const SEO: Metadata = {
+    metadataBase: new URL(SITE_URL),
+    title,
+    description,
+    applicationName: "Manash Gupta Portfolio",
+    category: "portfolio",
     keywords: [
+        "Manash Gupta",
         "Full Stack Developer",
+        "Software Engineer",
+        "Frontend Developer",
+        "Backend Developer",
         "React",
         "Angular",
         "Next.js",
@@ -16,16 +28,21 @@ export const SEO = {
         "MongoDB",
         "AWS",
         "DevOps",
+        "Vercel",
     ],
     authors: [{ name: "Manash Gupta" }],
     creator: "Manash Gupta",
+    publisher: "Manash Gupta",
+    alternates: {
+        canonical: "/",
+    },
     openGraph: {
         type: "website",
         locale: "en_US",
-        url: "https://manashgupta.dev",
-        title: "Manash Gupta | Software Engineer",
-        description:
-            "Manash Gupta, a passionate full stack developer with 4+ years of experience in React, Angular, Next.js, Node.js, tRPC, MySQL, PostgreSQL, MongoDB, AWS, and DevOps.",
+        url: SITE_URL,
+        siteName: "Manash Gupta Portfolio",
+        title,
+        description,
         images: [
             {
                 url: "/og_image.png",
@@ -37,9 +54,8 @@ export const SEO = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Manash Gupta | Software Engineer",
-        description:
-            "Manash Gupta, a passionate full stack developer with 4+ years of experience in React, Angular, Next.js, Node.js, tRPC, MySQL, PostgreSQL, MongoDB, AWS, and DevOps.",
+        title,
+        description,
         images: ["/og_image.png"],
         creator: "@manash_codes",
     },
@@ -51,6 +67,15 @@ export const SEO = {
         apple: "/apple-touch-icon.png",
     },
     manifest: "/site.webmanifest",
-    robots: "index, follow",
-    metadataBase: new URL("https://portfolio-manash.vercel.app/"),
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+            "max-video-preview": -1,
+        },
+    },
 };
